@@ -1,0 +1,32 @@
+{
+  "name": "claude-agent-sdk-ts",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for building Claude Code agents via the Claude CLI.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "prepare": "npm run build",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "claude",
+    "agent",
+    "sdk",
+    "anthropic"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
